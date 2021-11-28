@@ -1,7 +1,7 @@
 ---
-name: Jupyter Notebook
+name: CryoSPARC
 category: Interactive Apps
 subcategory: Servers
 role: batch_connect
 description: |
-  This app will launch a Jupyter Notebook server on one or more nodes.
+  This app will launch a CryoSPARC server with slurm access and/or a local worker.
