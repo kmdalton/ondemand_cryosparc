@@ -96,7 +96,7 @@ FIRSTNAME="____"
 LASTNAME="____"
 
 # Modules needed for CryoSPARC Worker 
-worker_modules=(
+cuda_modules=(
     cuda/11.1.0-fasrc01 
     cudnn/8.1.0.77_cuda11.2-fasrc01
     GCC/8.2.0-2.31.1 
