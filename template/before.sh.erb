@@ -42,7 +42,9 @@ echo "The port is: $port"
 rm -rf /tmp/cryosparc*
 
 # Modify the config file with the relevant port and hostname
-sed -i -E "/(CRYOSPARC_MASTER_HOSTNAME|CRYOSPARC_BASE_PORT)/d" $CONFIG_FILE
-echo "export CRYOSPARC_MASTER_HOSTNAME=$host" >> $CONFIG_FILE
+sed -i -E "/(CRYOSPARC_MASTER_HOSTNAME|CRYOSPARC_BASE_PORT|ROOT_URL)/d" $CONFIG_FILE
+#echo "export CRYOSPARC_MASTER_HOSTNAME=$host" >> $CONFIG_FILE
 echo "export CRYOSPARC_BASE_PORT=$port" >>$CONFIG_FILE
+#echo "export WEBAPP_ROOT_URL=https://vdi.rc.fas.harvard.edu/node/$host/$port" >>$CONFIG_FILE
+#echo "export ROOT_URL=/node/$host/$port/" >>$CONFIG_FILE
 

@@ -14,7 +14,10 @@ attributes:
     label: "Allocated Time (expressed in MM , or HH:MM:SS , or DD-HH:MM)."
     value: "<%= defined?(@custom_time) ? @custom_time : '04:00:00' %>"
     widget: text_field
-  bc_queue: "test"
+  bc_queue:
+    label: "SLURM partition"
+    value: test
+    widget: text_field
   custom_email_address:
     label: "email address for status notification"
     widget: text_field
